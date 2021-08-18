@@ -75,10 +75,10 @@ WSGI_APPLICATION = 'openshift.wsgi.application'
 
 DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'wand',
-            'HOST': 'mysql',
-            'PORT': '3306',
+            'HOST': 'postgresql',
+            'PORT': '5432',
             'USER': 'wand',
             'PASSWORD': '102030'
         }
